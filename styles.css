@@ -428,6 +428,27 @@ body.scrolled .topbar {
   color: var(--muted);
 }
 
+.stat-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.stat-link article {
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.stat-link:hover article {
+  transform: translateY(-3px);
+  border-color: rgba(125, 211, 252, 0.28);
+  background: linear-gradient(180deg, rgba(15, 28, 52, 0.95), rgba(8, 15, 28, 0.92));
+}
+
+.stat-link:focus-visible article {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .panel-note {
   margin-top: auto;
   padding: 18px;
